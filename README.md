@@ -107,17 +107,17 @@ make lint        # ruff + mypy
 make test        # pytest
 
 # replay a recorded session through the pipeline (no hardware needed)
-python -m nodes.replay --log logs/sample_session.parquet
+python -m autonomy_stack.nodes.replay --log logs/sample_session.parquet
 ```
 
 On the car itself:
 
 ```bash
 # drive it manually from a laptop over the network
-python -m nodes.teleop
+python -m autonomy_stack.nodes.teleop
 
 # run autonomous mode
-python -m nodes.autonomy
+python -m autonomy_stack.nodes.autonomy
 ```
 
 ---
