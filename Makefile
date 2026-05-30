@@ -4,7 +4,7 @@ PKG	:= autonomy_stack
 .PHONY: lint test run install
 
 install:
-$(PYTHON) -m pip installl -e ".[dev]"
+	$(PYTHON) -m pip install -e ".[dev]"
 
 lint:
 	ruff check $(PKG) tests
