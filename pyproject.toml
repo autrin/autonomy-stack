@@ -15,14 +15,22 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["ruff>=0.6", "mypy>=1.11", "pytest>=8.0"]
-pi  = ["adafruit-circuitpython-pca9685>=3.4", "adafruit-circuitpython-bno055>=5.4"]
+# Dev tools are upper-bounded so a future release can't silently break CI.
+dev = [
+    "ruff>=0.6,<0.9",
+    "mypy>=1.11,<2.0",
+    "pytest>=8.0,<9.0",
+]
+pi  = [
+    "adafruit-circuitpython-pca9685>=3.4",
+    "adafruit-circuitpython-bno055>=5.4",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["autonomy_stack"]
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py311"   # lint for the minimum supported version
 line-length = 100
 
 [tool.ruff.lint]
