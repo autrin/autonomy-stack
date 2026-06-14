@@ -7,7 +7,7 @@ import numpy.typing as npt
 class Camera(ABC):
     @abstractmethod
     def read(self) -> npt.NDArray[np.uint8]:
-        """Read one frame: an (H, W, 3) unit8 BGR image."""
+        """Read one frame: an (H, W, 3) uint8 BGR image."""
         ...
 
     @abstractmethod
