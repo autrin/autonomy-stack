@@ -10,10 +10,10 @@ Development happens in phases, each ending with a demoable artifact. The deliver
 
 Set the project up with the shape of real software from day one.
 
-- [ ] Initialize the repo: README, this roadmap, MIT license, `.gitignore`.
-- [ ] Set up the Python project: `pyproject.toml`, ruff (lint), mypy (types), pytest (tests), and a `Makefile` with `make lint`, `make test`, `make run`.
-- [ ] GitHub Actions CI running lint + types + tests on every push.
-- [ ] Establish the module layout:
+- [x] Initialize the repo: README, this roadmap, MIT license, `.gitignore`.
+- [x] Set up the Python project: `pyproject.toml`, ruff (lint), mypy (types), pytest (tests), and a `Makefile` with `make lint`, `make test`, `make run`.
+- [x] GitHub Actions CI running lint + types + tests on every push.
+- [x] Establish the module layout:
   ```
   autonomy_stack/
   ├── hardware/      # motor driver, servo, sensor interfaces (behind ABCs)
@@ -26,7 +26,7 @@ Set the project up with the shape of real software from day one.
   └── sim/           # offline simulator
   ```
   This maps cleanly onto ROS 2 packages for the planned v2.
-- [ ] Define the interface contracts (`MotorDriver`, `Camera`, `Planner`, etc.) as abstract base classes before implementing them. This allows real hardware to be swapped for fakes in tests.
+- [x] Define the interface contracts (`MotorDriver`, `Camera`, `Planner`, etc.) as abstract base classes before implementing them. This allows real hardware to be swapped for fakes in tests.
 
 **Artifact:** well-structured repo, green CI.
 
