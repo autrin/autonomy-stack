@@ -45,17 +45,16 @@ A car drivable from a laptop. No autonomy yet.
 
 ### Hardware
 
-| Item | Approx |
-|---|---|
-| 1/10-scale RC car (used Traxxas Slash 2WD or WLtoys 144001) | $70–100 |
-| Raspberry Pi 5 (4GB) + case/cooling | $75 |
-| Pi Camera Module 3 Wide | $35 |
-| PCA9685 16-channel PWM breakout | $15 |
-| BNO055 IMU breakout | $20 |
-| HC-SR04 ultrasonic sensors (x2) | $10 |
-| USB power bank (5V/3A) | $15 |
-| MicroSD 32GB + wiring + mounting | $25 |
-| **Total** | **~$265** |
+| Item |
+|---|
+| 1/10-scale RC car (used Traxxas Slash 2WD or WLtoys 144001)
+| Raspberry Pi 5 (4GB) + case/cooling
+| Pi Camera Module 3 Wide
+| PCA9685 16-channel PWM breakout
+| BNO055 IMU breakout
+| HC-SR04 ultrasonic sensors (x2)
+| USB power bank (5V/3A)
+| MicroSD 32GB + wiring + mounting
 
 ---
 
